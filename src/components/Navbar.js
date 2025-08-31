@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +41,7 @@ const Navbar = () => {
               </button>
             </li>
           ))}
+          <li><ThemeToggle /></li>
         </ul>
         <div 
           className={`hamburger ${isOpen ? 'active' : ''}`}
@@ -49,6 +51,7 @@ const Navbar = () => {
           <span></span>
           <span></span>
         </div>
+
       </div>
     </motion.nav>
   );

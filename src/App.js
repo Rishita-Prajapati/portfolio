@@ -21,7 +21,7 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
-        <ThemeToggle />
+
       </div>
     </ThemeProvider>
   );
